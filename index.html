@@ -35,27 +35,26 @@
         <img id="rubyloco-logo" src="https://secure.gravatar.com/avatar/39ea1010c60a77fc681b38fdbee13556?s=420" />
         <div class='callout'>
           Ruby LoCo meets on the second Monday and the last Friday of every month. <a href="http://twitter.com/ruby_loco">Follow us</a> on Twitter for details
+          <a href="https://twitter.com/ruby_loco" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ruby_loco</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
       </div>
       <ul class='span5 offset1' id='events'></ul>
     </div>
     <div class='row-fluid'>
       <h3>Sponsors</h3>
-      <a href="http://stickermule.com"><img height="90" width="90" src="/images/stickermule.png" /></a>
+      <a href="http://www.stickermule.com/unlock?ref_id=6020568601"><img height="90" width="90" src="/images/stickermule.png" /></a>
       <a href="http://busyconf.com"><img height="90" width="90" src="/images/busyconf.png" /></a>
-      <a href="https://twitter.com/ruby_loco" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ruby_loco</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       <script id='event-template' type='text/x-handlebars-template'>
         <li class='event'>
           <h2>{{name}}</h2>
           <h3 class='date'>{{date}}</h3>
           <div class='venue'>{{venue.name}}</div>
-          <a>{{event_url}}</a>
+          <a href='{{event_url}}'>{{event_url}}</a>
           <div class='rsvp'>attending: {{yes_rsvp_count}}</div>
           <div class='description'>{{description}}</div>
         </li>
       </script>
-      <ul class='span5 offset1' id='events'></ul>
     </div>
     <div class='footer text-center muted'>
       <p>
@@ -65,7 +64,7 @@
         All rights reserved.
       </p>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js" type="text/javascript"></script>
     <script src="/javascripts/all.js" type="text/javascript"></script>
   </body>
 </html>
