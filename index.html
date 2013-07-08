@@ -40,9 +40,7 @@
         </div>
         <div class='sponsors'>
           <h3>Support Our Sponsors</h3>
-          <a href="http://www.stickermule.com/unlock?ref_id=6020568601"><img height="90" width="90" src="/images/stickermule.png" /></a>
-          <a href="http://busyconf.com"><img height="90" width="90" src="/images/busyconf.png" /></a>
-          <a href="http://www.customink.com"><img height="90" width="90" src="/images/customink_logo.jpg" /></a>
+          <div id='sponsors'></div>
         </div>
       </div>
       <ul class='span5 offset1' id='events'></ul>
@@ -55,6 +53,11 @@
           <div class='rsvp'>attending: {{yes_rsvp_count}}</div>
           <div class='description'>{{description}}</div>
         </li>
+      </script>
+      <script id='sponsor-template' type='text/x-handlebars-template'>
+        <a href='{{url}}'>
+          <img class='sponsor' src='{{image_url}}'>
+        </a>
       </script>
     </div>
     <div class='footer text-center muted'>
