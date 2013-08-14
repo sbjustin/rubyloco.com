@@ -2,9 +2,13 @@
   %h3.list-header Photos
   %div#photos.list-body
 
+%div#modal-background
+
+%div#modal
+  %img
+
 %script#photo-template{ type: 'text/x-handlebars-template' }
-  %a{href: "{{highres_link}}" } 
-    %img.photo{ src: "{{photo_link}}"}
+  %img.photo{ src: "{{photo_link}}", "data-link" => "{{highres_link}}"}
 
 -content_for(:nav) do
   .nav

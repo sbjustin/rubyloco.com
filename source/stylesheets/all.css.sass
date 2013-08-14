@@ -176,3 +176,28 @@ h3.list-header
   img
     margin: 5px
     max-width: 47%
+    cursor: pointer
+
+#modal-background
+  display: none
+  position: absolute
+  top: 0px
+  height: 100%
+  width: 100%
+  background-color: gray
+  opacity: .4
+  z-index: 1049
+#modal
+  display: none
+  position: absolute
+  max-width: 80%
+  max-height: 80% 
+  margin: auto
+  z-index: 1050
+  background-color: blue
+  img
+    display: block
+    max-width: 100%
+    max-height: 100%
+    @include border_radius($radius-size)
+    border: 6px solid $light-gray
